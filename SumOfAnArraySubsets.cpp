@@ -19,8 +19,10 @@ int main()
         // Iterate through each element and check if it should be included in the current subset
         for (int j = 0; j < ArraySize; j++) 
         {
+            // Check if the jth bit is set (1) in the binary representation of i
             if (i & (1 << j)) 
             {
+                // If true, it means the jth element is included in the current subset
                 CurrentSum += Array[j];
             }
         }
